@@ -1,8 +1,7 @@
 const Canvas = require("canvas");
 const Discord = require("discord.js");
 
-const background =
-  "https://ihttp://www.simpleimageresizer.com/_uploads/photos/5dc79b4a/product-Big-Mac-mobile_1270x670.png.imgur.com/zvWTUVu.jpg";
+const background = "burgerwelcomemessage.jpg";
 
 const dim = {
   height: 675,
