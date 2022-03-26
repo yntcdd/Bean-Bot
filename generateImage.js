@@ -1,7 +1,8 @@
 const Canvas = require("canvas");
 const Discord = require("discord.js");
 
-const background = "https://i.imgur.com/zvWTUVu.jpg";
+const background =
+  "https://ihttp://www.simpleimageresizer.com/_uploads/photos/5dc79b4a/product-Big-Mac-mobile_1270x670.png.imgur.com/zvWTUVu.jpg";
 
 const dim = {
   height: 675,
@@ -19,7 +20,7 @@ const generateImage = async (member) => {
   let username = member.user.username;
   let discrim = member.user.discriminator;
   let avatarURL = member.user.displayAvatarURL({
-    format: "png",
+    format: "jpg",
     dynamic: false,
     size: av.size,
   });
@@ -73,7 +74,7 @@ const generateImage = async (member) => {
 
   const attachment = new Discord.MessageAttachment(
     canvas.toBuffer(),
-    "welcome.png"
+    "welcome.jpg"
   );
   return attachment;
 };
